@@ -29,7 +29,8 @@ framework:
         save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
     fragments: ~
     http_method_override: true
-    assets: ~
+    assets:
+        json_manifest_path: '%kernel.project_dir%/web/assets/manifest.json'
     php_errors:
         log: true
 
@@ -73,5 +74,5 @@ fos_user:
     firewall_name: main
     user_class: AppBundle\Entity\User
     from_email:
-        address: "hello@aquanote.com"
-        sender_name: "AquaNote Postman"
+        address: "hello@dreamcatchers.it"
+        sender_name: "Dreamcatchers Postman"
