@@ -14,7 +14,7 @@ Encore
     .cleanupOutputBeforeBuild()
 
     // will output as web/bundles/app.js
-    .addEntry('js/app', './app/resources/assets/js/main.js')
+    .addEntry('js/main', './app/resources/assets/js/main.js')
 
     // will output as web/bundles/main.css
     .addStyleEntry('css/main', './app/resources/assets/scss/main.scss')
@@ -30,7 +30,8 @@ Encore
     // create hashed filenames (e.g. app.abc123.css)
     .enableVersioning()
 
-    .enableReactPreset()
+    //.enableReactPreset()
+    .enableVueLoader()
 
     // first, install any presets you want to use (e.g. yarn add babel-preset-es2017)
     // then, modify the default Babel configuration
