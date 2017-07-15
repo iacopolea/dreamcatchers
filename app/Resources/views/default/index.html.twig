@@ -1,8 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <div id="dc-app"></div>
+{% block stylesheets %}
+    {{ parent() }}
 {% endblock %}
 
-{% block stylesheets %}
+{% block body %}
+    <div id="dc-app">
+        <Navbar></Navbar>
+    </div>
 {% endblock %}
+
+

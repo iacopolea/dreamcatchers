@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Dreamcatchers{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet" />
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}{% endblock %}
         <footer>
             {% block javascripts %}
-                <script src="{{ asset('assets/dist/js/app.js') }}"></script>
+                <script src="{{ asset('assets/js/main.js') }}"></script>
             {% endblock %}
         </footer>
     </body>
